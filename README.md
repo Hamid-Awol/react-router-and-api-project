@@ -7,7 +7,7 @@
 ![Vite](https://img.shields.io/badge/Vite-8.0-646cff?style=for-the-badge&logo=vite)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952b3?style=for-the-badge&logo=bootstrap)
 ![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=node.js)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-4479a1?style=for-the-badge&logo=mysql)
+
 
 
 ## ✨ Features
