@@ -1,0 +1,67 @@
+.sectionFour {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.left, .right {
+  flex: 1;
+  min-height: 500px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.left {
+  background-image: url('/src/assets/images/home/iphone11-colored.jpg');
+  background-size: cover;
+}
+
+.right {
+  background-image: url('/src/assets/images/home/apple-blue-logo.jpg');
+  background-size: cover;
+  background-color: #165ca9;
+}
+
+.left h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.white {
+  color: white;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  color: #06c;
+  text-decoration: none;
+  font-size: 21px;
+  margin: 0 15px;
+}
+
+.right .links a {
+  color: white;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .sectionFour {
+    flex-direction: column;
+  }
+  .left, .right {
+    min-height: 400px;
+  }
+  .left h2 {
+    font-size: 28px;
+  }
+  .links a {
+    font-size: 16px;
+  }
+}

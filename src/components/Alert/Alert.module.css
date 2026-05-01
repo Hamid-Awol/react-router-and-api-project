@@ -1,0 +1,47 @@
+.alertSection {
+  text-align: center;
+  padding: 60px 20px 20px;
+  background: #f5f5f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.alertTitle {
+  font-weight: 600;
+  font-size: 24px;
+  color: #1d1d1f;
+  padding: 10px;
+}
+
+.alertText {
+  max-width: 85%;
+  margin: 0 auto;
+  color: #1d1d1f;
+  line-height: 1.5;
+}
+
+.alertText a {
+  color: #06c;
+  text-decoration: none;
+}
+
+.alertText a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .alertSection {
+    padding: 50px 15px 15px;
+  }
+  .alertTitle {
+    font-size: 18px;
+  }
+  .alertText {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}

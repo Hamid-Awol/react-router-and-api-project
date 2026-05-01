@@ -1,0 +1,75 @@
+.sectionTwo {
+  background-image: url('/src/assets/images/home/macbookair-new.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fbfbfd;
+  text-align: center;
+  padding: 65px 20px;
+  min-height: 580px;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.newAlert {
+  color: #bf4801;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 26px;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  color: #86868b;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.links a {
+  color: #06c;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .sectionTwo {
+    background-image: url('/src/assets/images/home/macbookair-new-sm.jpg');
+    min-height: 500px;
+    padding: 40px 15px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .links a {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,65 @@
+.sectionThree {
+  background-image: url('/src/assets/images/home/iphone11-pro-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 65px 20px;
+  min-height: 580px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .sectionThree {
+    min-height: 500px;
+    padding: 40px 15px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .links a {
+    font-size: 16px;
+  }
+}

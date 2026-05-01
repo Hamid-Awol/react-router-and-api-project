@@ -1,0 +1,162 @@
+.navWrapper {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navWrapper.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+}
+
+.logo img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.navLinks {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navLinks ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.navLinks li a:hover {
+  color: #ccc;
+}
+
+.iconLink a {
+  display: flex;
+  align-items: center;
+}
+
+.iconLink a img {
+  height: 20px;
+  width: auto;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+  }
+
+  .navLinks.open {
+    left: 0;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navLinks li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+
+  .navLinks li a {
+    padding: 15px 20px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+  }
+
+  .iconLink a {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navLinks ul {
+    gap: 1rem;
+  }
+  .navLinks li a {
+    font-size: 12px;
+  }
+}
