@@ -9,11 +9,6 @@
 ![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=node.js)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479a1?style=for-the-badge&logo=mysql)
 
----
-
-## 📸 Screenshots
-<img width="1920" height="2841" alt="screencapture-localhost-5173-iphone-2026-05-01-21_49_43" src="https://github.com/user-attachments/assets/fe59736c-0313-4f64-8fdf-c4c2e5495f6c" />
-
 
 ## ✨ Features
 
